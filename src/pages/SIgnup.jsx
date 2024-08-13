@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import toast from "react-hot-toast";
 import signup from "../assets/signup.png";
+import { Helmet } from "react-helmet-async";
 export const SIgnup = () => {
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
@@ -41,6 +42,11 @@ export const SIgnup = () => {
   }
   return (
     <div className="mt-[120px] mb-[24px] md:mb-[40px] lg:mb-[80px] px-[32px] flex flex-col-reverse lg:flex-row gap-x-[32px] items-center ">
+      <Helmet>
+        <title>Signup</title>
+        <meta name="description" content="Sign up for early acces" />
+        <link rel="canonical" href="https://www.endurafitness.in/signup" />
+      </Helmet>
       <form
         onSubmit={(e) => {
           Submit(e);
