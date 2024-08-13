@@ -20,7 +20,9 @@ import sakshi_shetty from "../assets/Trainers/Sakshi_shetty.png";
 import sakshi_shelar from "../assets/Trainers/sakshi_shelar.png";
 import akash_s from "../assets/Trainers/Akash_sharma.png";
 import yash from "../assets/Trainers/Yashh.png";
+import akashKataria from "../assets/Trainers/Akash_kat.png";
 const trainerImages = [
+  akashKataria,
   Khusboo_d,
   austin,
   Vyom,
