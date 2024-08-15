@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import contact1 from "../assets/contact1.svg";
 import contact2 from "../assets/contact2.svg";
 import contact3 from "../assets/contact3.svg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
   return (
@@ -47,9 +47,13 @@ const Footer = () => {
           © 2024 endura. All Right Reserved
         </div>
         <div className="flex gap-x-[16px]">
-          <div className="w-[32px] h-[32px] md:w-[44px] md:h-[44px]">
+          <Link
+            to={"https://www.instagram.com/endura.fitness"}
+            target="blank"
+            className="w-[32px] h-[32px] md:w-[44px] md:h-[44px]"
+          >
             <img className="w-full h-full" src={contact1} />
-          </div>
+          </Link>
           <div className="w-[32px] h-[32px] md:w-[44px] md:h-[44px]">
             <img src={contact2} />
           </div>

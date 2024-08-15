@@ -70,16 +70,18 @@ function Hero() {
             </div>
           </div>
 
-          <button
-            onClick={() => {
-              navigate("/signup");
-            }}
-            className="bg-[#DA482C] px-[20px] py-[10px]  w-[235px] mt-[16px] md:mt-[24px]  rounded-[30px] 
-          text-[#F1F0EE] text-[16px] flex items-center gap-x-2 font-normal mx-[7%] h-[56px] lg:mx-0"
-          >
-            <div>Sign Up for Early Acess</div>
-            <FaArrowRightLong />
-          </button>
+          <div>
+            <button
+              onClick={() => {
+                navigate("/signup");
+              }}
+              className="bg-[#DA482C] px-[20px] py-[10px]   mt-[16px] md:mt-[24px]  rounded-[30px] 
+          text-[#F1F0EE] text-[16px] flex items-center gap-x-2 font-medium  mx-[7%] h-[56px] lg:mx-0"
+            >
+              <div>Sign Up for Early Acess</div>
+              <FaArrowRightLong />
+            </button>
+          </div>
         </div>
       </div>
       <div className="relative">
