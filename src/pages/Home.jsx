@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
       <Helmet>
-        <title>Endura - Train. Transform. Thrive</title>
+        <title>Endura Fitness - Train. Transform. Thrive</title>
         <meta
           name="description"
           content="Endura Fitness goes beyond just workouts. We empower you with personalized guidance, comprehensive tracking, and expert consultations to make fitness a sustainable lifestyle."
