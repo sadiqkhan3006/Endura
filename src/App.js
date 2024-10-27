@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import { SIgnup } from "./pages/SIgnup";
 import Footer from "./components/Footer";
 import { useEffect } from "react";
+import Brands from "./pages/Brands";
 
 function App() {
   function ScrollToTopOnNavigate() {
@@ -22,6 +23,7 @@ function App() {
       <ScrollToTopOnNavigate />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/trustedby" element={<Brands />} />
         <Route path="/signup" element={<SIgnup />} />
       </Routes>
       <Footer />

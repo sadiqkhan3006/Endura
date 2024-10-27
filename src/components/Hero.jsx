@@ -4,6 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import peeps from "../assets/peers.svg";
 import bar from "../assets/bar.svg";
 import { useNavigate } from "react-router-dom";
+import rectangle from "../assets/rectangle.png";
 function Hero() {
   const navigate = useNavigate();
   const words = [
@@ -24,7 +25,15 @@ function Hero() {
   ];
   return (
     <div id="Home" className="mt-[100px] ml-0 mb-[60px] lg:mb-[106px]">
-      <div className="flex flex-col-reverse lg:flex-row   lg:h-[866px] gap-x-[5%] gap-y-[8px] ">
+      <div className="flex flex-col-reverse lg:flex-row  lg:h-[866px] gap-x-[5%] gap-y-[8px] relative ">
+        {/* <div className="absolute w-full bottom-0 object-fill    h-full   -z-10">
+          <img
+            className=" h-full  w-full  "
+            src={rectangle}
+            alt="background"
+            loading="lazy"
+          />
+        </div> */}
         <div className="w-full relative ">
           <img
             className="h-[433px] md:h-[700px] lg:h-full w-full "

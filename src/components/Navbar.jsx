@@ -21,6 +21,7 @@ function Navbar() {
       path: "#Features",
     },
     { id: 3, title: "Team", path: "#Team" },
+    { id: 4, title: "Trusted By", path: "/trustedby" },
   ];
   const location = useLocation();
   const matchRoute = (route) => {
@@ -48,7 +49,9 @@ function Navbar() {
                   setmenuOpen(false);
                   const element = document.getElementById(item.title);
                   matchRoute("/")
-                    ? element.scrollIntoView({ behavior: "smooth" })
+                    ? item.id === 4
+                      ? navigate("/trustedby")
+                      : element.scrollIntoView({ behavior: "smooth" })
                     : navigate("/");
                 }}
                 key={item.id}
