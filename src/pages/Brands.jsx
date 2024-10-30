@@ -27,7 +27,10 @@ function Brands() {
       </div>
       <div className="flex flex-col gap-y-8 mt-[35px]">
         {brands.map((item) => (
-          <div className="flex flex-col lg:flex-row gap-y-6  items-center">
+          <div
+            key={item.id}
+            className="flex flex-col lg:flex-row gap-y-6  items-center"
+          >
             <div className="flex flex-col md:flex-row lg:flex-col lg:w-[70%] gap-y-[16px]  items-start ">
               <div className="flex items-center lg:items-start md:flex-row gap-x-[8px] md:gap-x-[16px] lg:gap-x-[24px] md:px-[24px]">
                 <div className="md:w-[60%]">
@@ -87,10 +90,7 @@ function Brands() {
                   className=" relative  pb-[12px]  border-[1px] border-[#E4E2DE] rounded-[16px]  md:rounded-3xl    "
                 >
                   <div>
-                    <img
-                      className="aspect-auto lg:h-full   lg:w-full"
-                      src={prod.img}
-                    />
+                    <img className="   " src={prod.img} />
                   </div>
                   <div className=" pt-[8px] px-[8px] font-Archivo text-black font-semibold text-[12px] md:text-[16px] lg:text-[20px] text-center   ">
                     {prod.title}
