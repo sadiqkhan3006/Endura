@@ -21,6 +21,19 @@ import brand4logo from "../assets/brands/brand4/brand4logo.svg";
 import brand4img1 from "../assets/brands/brand4/brand4img1.png";
 import brand4img2 from "../assets/brands/brand4/brand4img2.png";
 import brand4img3 from "../assets/brands/brand4/brand4img3.png";
+
+import brand5logo from "../assets/brands/brand5/brand5logo.svg";
+import brand5img1 from "../assets/brands/brand5/brand5img1.png";
+import brand5img2 from "../assets/brands/brand5/brand5img2.png";
+import brand5img3 from "../assets/brands/brand5/brand5img3.png";
+
+import brand6logo from "../assets/brands/brand6/brand6logo.svg";
+import brand6img1 from "../assets/brands/brand6/brandimg1.png";
+import brand6img2 from "../assets/brands/brand6/brandimg2.png";
+import brand6img3 from "../assets/brands/brand6/brandimg3.png";
+
+import brand7logo from "../assets/brands/brand7/brand7logo.svg";
+
 const brands = [
   {
     id: 0,
@@ -162,6 +175,90 @@ const brands = [
       },
     ],
   },
+  {
+    id: 5,
+    name: "Rizebar",
+    logo: brand5logo,
+    desc: "Rizebar provides healthy, natural snacks and sleep aids for various dietary needs, made with premium ingredients and free of chemicals.",
+    instagram: "https://www.instagram.com/rizebar.in/",
+    website: "https://rizebar.in/",
+    products: [
+      {
+        id: 0,
+        title: `Assorted Bars`,
+        img: brand5img1,
+        link: "https://rizebar.in/collections/energy-bar/products/rize-assorted-energy-bars-pack-of-10?variant=43171426435106",
+      },
+      {
+        id: 1,
+        title: "Bliss Bites",
+        img: brand5img2,
+        link: "https://rizebar.in/products/bliss-bites-milk-chocolate?_pos=2&_psq=bliss&_ss=e&_v=1.0",
+      },
+      {
+        id: 2,
+        title: "Energy bar",
+        img: brand5img3,
+        link: "https://rizebar.in/products/rize-energy-bar-berry-blast?variant=42877496492066",
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "POD Nutrition",
+    logo: brand6logo,
+    desc: "Pod delivers superior absorption, clean ingredients, and exceptional taste. It empowers individuals with optimal nutrition, supporting fitness goals and overall well-being.",
+    instagram: "https://www.instagram.com/mypodnutrition/",
+    website: "https://podnutrition.in/",
+    products: [
+      {
+        id: 0,
+        title: `Hazelnut Cream`,
+        img: brand6img1,
+        link: "https://podnutrition.in/collections/lean-pods/products/hazelnut-cream-plant-protein-powder",
+      },
+      {
+        id: 1,
+        title: "Lean Combo",
+        img: brand6img2,
+        link: "https://podnutrition.in/products/lean-pod-combo-plant-protein",
+      },
+      {
+        id: 2,
+        title: "Plant Protien Combo",
+        img: brand6img3,
+        link: "https://podnutrition.in/collections/combos/products/combo-pack-sachet-chocolate-hazelnut-hapus-mango-real-strawberry",
+      },
+    ],
+  },
+  //   {
+  //     id: 7,
+  //     name: "THE",
+  //     logo: brand7logo,
+  //     desc: "Quenching thirst, one bottle at a time. Every drop tells a story of purity.",
+  //     instagram: "https://www.instagram.com/storiesbythe/",
+  //     website: "https://www.google.com/",
+  //     products: [
+  //       {
+  //         id: 0,
+  //         title: `Hazelnut Cream`,
+  //         img: brand6img1,
+  //         link: "https://podnutrition.in/collections/lean-pods/products/hazelnut-cream-plant-protein-powder",
+  //       },
+  //       {
+  //         id: 1,
+  //         title: "Lean Combo",
+  //         img: brand6img2,
+  //         link: "https://podnutrition.in/products/lean-pod-combo-plant-protein",
+  //       },
+  //       {
+  //         id: 2,
+  //         title: "Plant Protien Combo",
+  //         img: brand6img3,
+  //         link: "https://podnutrition.in/collections/combos/products/combo-pack-sachet-chocolate-hazelnut-hapus-mango-real-strawberry",
+  //       },
+  //     ],
+  //   },
 ];
 
 export default brands;

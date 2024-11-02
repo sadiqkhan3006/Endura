@@ -83,7 +83,11 @@ function Brands() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row py-[20px] md:py-[24px] lg:py-[32px] px-[2%] rounded-[16px] md:rounded-[32px] bg-[#F8F8F7] w-full gap-x-[8px] md:justify-evenly ">
+            <div
+              className={` ${
+                item.id === 7 ? "invisible" : "visible"
+              } flex flex-row py-[20px] md:py-[24px] lg:py-[32px] px-[2%] rounded-[16px] md:rounded-[32px] bg-[#F8F8F7] w-full gap-x-[8px] md:justify-evenly `}
+            >
               {item.products.map((prod) => (
                 <div
                   key={prod.id}
