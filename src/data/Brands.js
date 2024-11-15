@@ -149,7 +149,7 @@ const brands = [
   },
   {
     id: 4,
-    name: "Pitara",
+    name: "Pitaara",
     logo: brand4logo,
     desc: "A trusted partner in natural wellness, offering safe supplements to support your overall health and vitality. ",
     instagram: "https://www.instagram.com/pitaara_premix/",
