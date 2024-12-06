@@ -22,6 +22,26 @@ const Footer = () => {
               expert consultations, and a supportive community. Download the app
               and unlock a healthier, happier you.
             </div>
+            <div className="text-[16px] text-[#FFEFBD] leading-[20px] md:text-[18px]  lg:text-[20px] md:leading-[24px]   font-Poppins   font-semibold  ">
+              <span
+                onClick={() => {
+                  navigate("/terms-and-condition");
+                }}
+                className="  cursor-pointer"
+              >
+                Terms & Conditions{" "}
+              </span>
+              |
+              <span
+                onClick={() => {
+                  navigate("/privacy-policy");
+                }}
+                className="  cursor-pointer "
+              >
+                {" "}
+                Privacy Policy
+              </span>
+            </div>
           </div>
           <div className="w-full flex flex-col md:items-end">
             <div>
@@ -54,11 +74,22 @@ const Footer = () => {
           >
             <img className="w-full h-full" src={contact1} />
           </Link>
-          <div className="w-[32px] h-[32px] md:w-[44px] md:h-[44px]">
-            <img src={contact2} />
+          <div className="">
+            <Link
+              to={"mailto:info@endurafitness.in"}
+              className="w-[32px] h-[32px] md:w-[44px] md:h-[44px]"
+            >
+              <img src={contact2} />
+            </Link>
           </div>
-          <div className="w-[32px] h-[32px] md:w-[44px] md:h-[44px]">
-            <img src={contact3} />
+          <div className="">
+            <Link
+              to={"https://chat.whatsapp.com/K2a5n1tqDLWKt7OlTs9o0j"}
+              target="blank"
+              className="w-[32px] h-[32px] md:w-[44px] md:h-[44px]"
+            >
+              <img src={contact3} />
+            </Link>
           </div>
         </div>
       </div>

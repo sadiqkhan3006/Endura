@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import { useEffect } from "react";
 import Brands from "./pages/Brands";
 import { Helmet } from "react-helmet-async";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsCondition from "./pages/TermsCondition";
 
 function App() {
   function ScrollToTopOnNavigate() {
@@ -43,6 +45,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/trustedby" element={<Brands />} />
         <Route path="/signup" element={<SIgnup />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-condition" element={<TermsCondition />} />
       </Routes>
       <Footer />
     </div>
