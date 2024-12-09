@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
+import logo from "../assets/enduralogo.svg";
 import {
   Link,
   Navigate,
@@ -32,11 +33,17 @@ function Navbar() {
       <nav
         className={`${
           menuOpen ? "status" : ""
-        } top-0 fixed z-40 w-full min-h-[96px]     bg-white bg-opacity-[100%] lg:h-[96px] flex flex-row navbarStyle`}
+        } top-0 fixed z-40 w-full min-h-[66px]     bg-[#F8F8F7] bg-opacity-[100%] lg:h-[96px] flex flex-row navbarStyle`}
       >
         <div className="ml-[7%] mr-[7%] lg:items-center  flex flex-col gap-y-5 lg:flex-row w-full justify-between text-2xl">
           <div className="font-bold   mt-5 lg:mt-0 text-[#DA482C]  hover:text-[#DA482C]  transition-colors  delay-75 duration-150 ease-in  cursor-pointer font-Poppins  ">
-            <Link to="/">endura.</Link>
+            <Link to="/">
+              <img
+                className="w-[60px] md:w-[80px] lg:w-[120px]"
+                src={logo}
+                alt="endura."
+              />
+            </Link>
           </div>
           <ul
             className={`${

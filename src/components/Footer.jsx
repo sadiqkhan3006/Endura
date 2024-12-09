@@ -4,6 +4,7 @@ import contact1 from "../assets/contact1.svg";
 import contact2 from "../assets/contact2.svg";
 import contact3 from "../assets/contact3.svg";
 import { Link, useNavigate } from "react-router-dom";
+import logo from "../assets/enduralogo.svg";
 const Footer = () => {
   const navigate = useNavigate();
   return (
@@ -15,14 +16,16 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row bg-black text-white p-[40px] lg:p-[80px] rounded-[32px] justify-between  items-center  gap-y-[24px] gap-x-[24px]    ">
           <div className="w-full flex flex-col gap-y-[24px] lg:gap-y-[32px] ">
             <div className="text-[#DA482C] font-Archivo text-[36px] md:text-[48px] lg:text-[64px] leading-[52px] lg:leading-[70px] font-extrabold  ">
-              endura.
+              <div className="w-[100px] md:w-[120px] lg:w-[140px]">
+                <img src={logo} alt="endura." />
+              </div>
             </div>
             <div className="text-[#E4E2DE] font-Poppins md:text-[16px] text-[14px] leading-[16px]  lg:text-[20px] font-normal md:leading-[19px]  lg:leading-[23.3px]">
               Endura Fitness is your one-stop shop for personalized guidance,
               expert consultations, and a supportive community. Download the app
               and unlock a healthier, happier you.
             </div>
-            <div className="text-[16px] text-[#FFEFBD] leading-[20px] md:text-[18px]  lg:text-[20px] md:leading-[24px]   font-Poppins   font-semibold  ">
+            <div className="text-[13px] text-[#FFEFBD] leading-[20px] md:text-[15px]  lg:text-[20px] md:leading-[24px]   font-Poppins   font-semibold  ">
               <span
                 onClick={() => {
                   navigate("/terms-and-condition");
@@ -39,7 +42,17 @@ const Footer = () => {
                 className="  cursor-pointer "
               >
                 {" "}
-                Privacy Policy
+                Privacy Policy{" "}
+              </span>
+              |
+              <span
+                onClick={() => {
+                  navigate("/contact-us");
+                }}
+                className="  cursor-pointer "
+              >
+                {" "}
+                Contact Us
               </span>
             </div>
           </div>

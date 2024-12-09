@@ -9,6 +9,7 @@ import Brands from "./pages/Brands";
 import { Helmet } from "react-helmet-async";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsCondition from "./pages/TermsCondition";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   function ScrollToTopOnNavigate() {
@@ -47,6 +48,7 @@ function App() {
         <Route path="/signup" element={<SIgnup />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-condition" element={<TermsCondition />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <Footer />
     </div>
