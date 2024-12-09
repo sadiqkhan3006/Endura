@@ -74,23 +74,20 @@ const Footer = () => {
           >
             <img className="w-full h-full" src={contact1} />
           </Link>
-          <div className="">
-            <Link
-              to={"mailto:info@endurafitness.in"}
-              className="w-[32px] h-[32px] md:w-[44px] md:h-[44px]"
-            >
-              <img src={contact2} />
-            </Link>
-          </div>
-          <div className="">
-            <Link
-              to={"https://chat.whatsapp.com/K2a5n1tqDLWKt7OlTs9o0j"}
-              target="blank"
-              className="w-[32px] h-[32px] md:w-[44px] md:h-[44px]"
-            >
-              <img src={contact3} />
-            </Link>
-          </div>
+
+          <Link
+            to={"mailto:info@endurafitness.in"}
+            className="w-[32px] h-[32px] md:w-[44px] md:h-[44px]"
+          >
+            <img src={contact2} />
+          </Link>
+          <Link
+            to={"https://chat.whatsapp.com/K2a5n1tqDLWKt7OlTs9o0j"}
+            target="blank"
+            className="w-[32px] h-[32px] md:w-[44px] md:h-[44px]"
+          >
+            <img src={contact3} />
+          </Link>
         </div>
       </div>
     </div>
