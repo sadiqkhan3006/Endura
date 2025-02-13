@@ -118,12 +118,12 @@ function Hero() {
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.2 }}
               onClick={() => {
-                navigate("/signup");
+                navigate("/download");
               }}
               className="bg-[#DA482C] px-[20px] py-[10px]   mt-[16px] md:mt-[24px]  rounded-[30px] 
           text-[#F1F0EE] text-[16px] flex items-center gap-x-2 font-medium  mx-[7%] h-[56px] lg:mx-0"
             >
-              <div>Sign Up for Early Acess</div>
+              <div>Download Now</div>
               <FaArrowRightLong />
             </motion.button>
           </motion.div>
