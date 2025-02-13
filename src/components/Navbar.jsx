@@ -33,7 +33,7 @@ function Navbar() {
       <nav
         className={`${
           menuOpen ? "status" : ""
-        } top-0 fixed z-40 w-full min-h-[66px]     bg-[#F8F8F7] bg-opacity-[100%] lg:h-[96px] flex flex-row navbarStyle`}
+        } top-0  z-40 w-full min-h-[66px]     bg-[#F8F8F7] bg-opacity-[100%] lg:h-[96px] flex flex-row navbarStyle`}
       >
         <div className="ml-[7%] mr-[7%] lg:items-center  flex flex-col gap-y-5 lg:flex-row w-full justify-between text-2xl">
           <div className="font-bold   mt-5 lg:mt-0 text-[#DA482C]  hover:text-[#DA482C]  transition-colors  delay-75 duration-150 ease-in  cursor-pointer font-Poppins  ">
@@ -73,7 +73,7 @@ function Navbar() {
             <div
               onClick={() => {
                 setmenuOpen(false);
-                navigate("/signup");
+                navigate("/download");
               }}
               className="bg-[#DA482C] text-[#F1F0EE] rounded-[30px] px-[20px] py-[10px] cursor-pointer"
             >

@@ -6,6 +6,7 @@ import workout from "../assets/workout.svg";
 import run from "../assets/run.svg";
 import repeat from "../assets/repeat.svg";
 import dumbell from "../assets/dumbell.svg";
+import { animate, delay, motion } from "motion/react";
 export const Originals = () => {
   const creatorsCorner = [
     {
@@ -67,18 +68,36 @@ export const Originals = () => {
       icon: dumbell,
     },
   ];
+  const fadeInSlideUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
   return (
     <div className="mx-[6%] mb-[60px] lg:mb-[160px]">
       <div className="flex flex-col items-center gap-y-[16px] md:gap-y-[24px] lg:gap-y-[35px] ">
-        <div className="text-center font-Poppins  text-[#171717] text-[20px] md:text-[23px] font-normal leading-[30px]  ">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeInSlideUp}
+          className="text-center font-Poppins  text-[#171717] text-[20px] md:text-[23px] font-normal leading-[30px]  "
+        >
           Endura Originals
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: "20%" }}
+          variants={fadeInSlideUp}
           className="font-Archivo text-[#171717] text-center text-[24px] md:text-[36px] lg:text-[48px] font-extrabold
         uppercase leading-[28px] md:leading-[42px] lg:leading-[56px] max-w-[902px] "
         >
           Discover, Connect, and Thrive with Endura
-        </div>
+        </motion.div>
         <div className="flex flex-col md:py-[24px] gap-y-[32px] md:gap-y-[48px] lg:gap-y-[72px] ">
           <div className="flex flex-col lg:flex-row  gap-y-[32px] md:gap-y-[40px]  gap-x-[100px] ">
             <div className="w-full pt-[4%] ">

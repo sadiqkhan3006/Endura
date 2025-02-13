@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import toast from "react-hot-toast";
 import signup from "../assets/signup.png";
 import { Helmet } from "react-helmet-async";
+import downloadImg from "../assets/downloadNow.png";
 export const SIgnup = () => {
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
@@ -166,7 +167,7 @@ export const SIgnup = () => {
         </button>
       </form>
       <div className="w-full h-full">
-        <img className="w-full md:h-[550px] lg:h-full" src={signup} />
+        <img className="w-full md:h-[550px] lg:h-full" src={downloadImg} />
       </div>
     </div>
   );

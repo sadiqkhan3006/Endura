@@ -13,7 +13,7 @@ import {
 function Brands() {
   const navigate = useNavigate();
   return (
-    <div className=" mt-[100px] mx-[6%] mb-[60px] lg:mb-[160px]">
+    <div className=" mt-[22px] mx-[6%] mb-[60px] lg:mb-[160px]">
       <div className="flex flex-col items-center gap-y-[16px] md:gap-y-[24px] lg:gap-y-[35px] ">
         <div className="text-center font-Poppins  text-[#171717] text-[20px] md:text-[23px] font-normal leading-[30px]  ">
           Trusted By

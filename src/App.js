@@ -10,7 +10,9 @@ import { Helmet } from "react-helmet-async";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsCondition from "./pages/TermsCondition";
 import ContactUs from "./pages/ContactUs";
-
+import SmoothScroll from "./components/SmoothScroll";
+import Studio from "./pages/Studio";
+import DownloadNow from "./pages/DownloadNow";
 function App() {
   function ScrollToTopOnNavigate() {
     const location = useLocation();
@@ -22,7 +24,7 @@ function App() {
     return null;
   }
   return (
-    <div className="overflow-hidden ">
+    <SmoothScroll className="overflow-hidden ">
       <Helmet>
         <script>
           {`
@@ -49,9 +51,11 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-condition" element={<TermsCondition />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/studio" element={<Studio />} />
+        <Route path="/download" element={<DownloadNow />} />
       </Routes>
       <Footer />
-    </div>
+    </SmoothScroll>
   );
 }
 
