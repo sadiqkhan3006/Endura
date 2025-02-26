@@ -18,7 +18,7 @@ export const Features = () => {
   const workoutInfoAnimation = {
     default: {
       x: 0,
-      opacity: 0,
+
       transition: {
         duration: 1.5,
         ease: "linear",
@@ -235,15 +235,18 @@ export const Features = () => {
             >
               <motion.div
                 variants={workoutCardAnimation}
-                className=" absolute w-[155px] h-[316px] md:w-[335px] md:h-[680px] left-[7%] top-[90%] z-10"
+                className=" absolute w-[155px] h-[316px] md:w-[335px] md:h-[680px] md:left-[7%] md:top-[90%] z-10"
               >
                 <img src={workout} />
               </motion.div>
               <motion.div
                 variants={workoutInfoAnimation}
-                className=" absolute w-[335px] h-[680px] z-20 left-[60%] top-[65%] md:top-[55%] opacity-0"
+                className=" absolute w-[335px] h-[680px] z-20 left-[60%] top-[65%] md:top-[55%] md:opacity-0"
               >
-                <img src={info} />
+                <img
+                  className="h-[80px] w-[280px] md:h-auto md:w-auto"
+                  src={info}
+                />
               </motion.div>
             </motion.div>
           </motion.div>

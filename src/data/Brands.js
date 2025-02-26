@@ -34,6 +34,39 @@ import brand6img3 from "../assets/brands/brand6/brandimg3.png";
 
 import brand7logo from "../assets/brands/brand7/brand7logo.svg";
 
+import brand8logo from "../assets/brands/brand8/superyoubrand8.svg";
+import brand8img1 from "../assets/brands/brand8/superyou_brand8_img.png";
+import brand8img2 from "../assets/brands/brand8/brand8_img2.png";
+import brand8img3 from "../assets/brands/brand8/brand8img3.png";
+
+import brand9logo from "../assets/brands/brand9/brand9.svg";
+import brand9img1 from "../assets/brands/brand9/brand9img1.png";
+import brand9img2 from "../assets/brands/brand9/brand9img2.png";
+import brand9img3 from "../assets/brands/brand9/brand9img3.png";
+
+import brand10logo from "../assets/brands/brand10/brand10.svg";
+import brand10img1 from "../assets/brands/brand10/brand10img1.png";
+import brand10img2 from "../assets/brands/brand10/brand10img2.png";
+import brand10img3 from "../assets/brands/brand10/brand10img3.png";
+
+import brand11logo from "../assets/brands/brand11/brand11.svg";
+import brand11img1 from "../assets/brands/brand11/brand11img1.png";
+import brand11img2 from "../assets/brands/brand11/brand11img2.png";
+import brand11img3 from "../assets/brands/brand11/brand11img3.png";
+
+import brand12logo from "../assets/brands/brand12/brand12.svg";
+import brand12img1 from "../assets/brands/brand12/brand12img1.png";
+import brand12img2 from "../assets/brands/brand12/brand12img2.png";
+import brand12img3 from "../assets/brands/brand12/brand12img3.png";
+
+import brand13logo from "../assets/brands/brand13/brand13.svg";
+import brand13img1 from "../assets/brands/brand13/brand13img1.png";
+import brand13img2 from "../assets/brands/brand13/brand13img2.png";
+import brand13img3 from "../assets/brands/brand13/brand13img3.png";
+
+import silvasa from "../assets/brands/silvasa.svg";
+import zee5 from "../assets/brands/zee5.svg";
+
 const brands = [
   {
     id: 0,
@@ -259,6 +292,193 @@ const brands = [
   //       },
   //     ],
   //   },
+  {
+    id: 8,
+    name: "Super You",
+    logo: brand8logo,
+    desc: "Super You uses fermented yeast protein technology to create a clean & high-performing protein for a more efficient, planet-friendly solution.",
+    instagram: "https://www.instagram.com/be.superyou/",
+    website: "https://superyou.in/",
+    products: [
+      {
+        id: 0,
+        title: `Variety Box`,
+        img: brand8img1,
+        link: "https://superyou.in/products/variety-box",
+      },
+      {
+        id: 1,
+        title: "Cheese Protein Wafer",
+        img: brand8img2,
+        link: "https://superyou.in/products/cheese-protein-wafer?pr_prod_strat=jac&pr_rec_id=0edfc2526&pr_rec_pid=9487398043938&pr_ref_pid=9494053978402&pr_seq=uniform",
+      },
+      {
+        id: 2,
+        title: "Choco Peanut Butter",
+        img: brand8img3,
+        link: "https://superyou.in/products/choco-peanut-butter-protein-wafer",
+      },
+    ],
+  },
+  {
+    id: 9,
+    name: "Alpino",
+    logo: brand9logo,
+    desc: "Alpino fuels fitness with high-protein, natural nutrition—pure, tasty, and clean.",
+    instagram: "https://www.instagram.com/alpinohealthfoods/",
+    website: "https://alpino.store/",
+    products: [
+      {
+        id: 0,
+        title: `Rolled Oats Chocolate`,
+        img: brand9img1,
+        link: "https://alpino.store/products/peanut-butter-super-oats-chocolate",
+      },
+      {
+        id: 1,
+        title: "Peanut Butter Crunch",
+        img: brand9img2,
+        link: "https://alpino.store/products/alpino-natural-peanut-butter-crunch",
+      },
+      {
+        id: 2,
+        title: "Peanut Crackers",
+        img: brand9img3,
+        link: "https://alpino.store/products/alpino-peanut-crackers-smokey-bbq-600g-pack-of-3",
+      },
+    ],
+  },
+  {
+    id: 10,
+    name: "Baf Pronutrition",
+    logo: brand10logo,
+    desc: "Bafpro Nutrition offers premium health supplements all designed to enhance wellness and vitality.",
+    instagram: "https://www.instagram.com/bafpronutrition/#",
+    website: "https://bafpronutrition.com/",
+    products: [
+      {
+        id: 0,
+        title: `Spirulina Capsules`,
+        img: brand10img1,
+        link: "https://bafpronutrition.com/products/spirulina-30-caps",
+      },
+      {
+        id: 1,
+        title: "Spirulina powder",
+        img: brand10img2,
+        link: "https://bafpronutrition.com/products/spirulina-powder-boost-your-health-with-100-pure-spirulina-supplement",
+      },
+      {
+        id: 2,
+        title: "Lavender Soap",
+        img: brand10img3,
+        link: "https://bafpronutrition.com/products/bafpro-nutrition-kaolin-lavender-soap-ultra-moisture-handmade-organic-vegan-soap-1?_pos=1&_sid=f28917c79&_ss=r",
+      },
+    ],
+  },
+  {
+    id: 11,
+    name: "Green Protein",
+    logo: brand11logo,
+    desc: "Green Protein offers delicious, 100% plant-based, vegan-friendly protein products designed for a healthy and sustainable lifestyle.",
+    instagram: "https://www.instagram.com/greenproteinofficial/?hl=en",
+    website: "https://greenprotein.co.in/",
+    products: [
+      {
+        id: 0,
+        title: `Crave Protein Bar`,
+        img: brand11img1,
+        link: "https://greenprotein.co.in/products/crave-protein-bar-green-protein",
+      },
+      {
+        id: 1,
+        title: "Surge - Pre Workout",
+        img: brand11img2,
+        link: "https://greenprotein.co.in/products/surge-pre-workout",
+      },
+      {
+        id: 2,
+        title: "Ultimate Coffee Pouch",
+        img: brand11img3,
+        link: "https://greenprotein.co.in/products/ultimate-coffee-pouch-1kg",
+      },
+    ],
+  },
+  {
+    id: 12,
+    name: "The Tiny Secret",
+    logo: brand12logo,
+    desc: "The Tiny Secret delivers natural wellness with India’s first milk calcium, multivitamins, and teas for daily self-care.",
+    instagram: "https://www.instagram.com/thetinysecret",
+    website: "https://thetinysecret.com/",
+    products: [
+      {
+        id: 0,
+        title: `Milk Calcium Tablets`,
+        img: brand12img1,
+        link: "https://thetinysecret.com/collections/shop-all/products/milk-caclium-natural-calcium-from-milk-fortified-with-vitamin-d3-and-k2-7-30s-tablet",
+      },
+      {
+        id: 1,
+        title: "Gut Health Tablets",
+        img: brand12img2,
+        link: "https://thetinysecret.com/collections/shop-all/products/the-tiny-secret-s-gut-health-fizz-jaljeera-flavour",
+      },
+      {
+        id: 2,
+        title: "Digestive Mints",
+        img: brand12img3,
+        link: "https://thetinysecret.com/collections/shop-all/products/the-tiny-secret-s-digestion-fit-mints-meetha-pan-flavour",
+      },
+    ],
+  },
+  {
+    id: 13,
+    name: "Shanta G",
+    logo: brand13logo,
+    desc: "Shanta G offers hygienically prepared, flavorful snacks like wheat thins and khakhras in unique flavors, vacuum-packed for freshness and available globally.",
+    instagram: "https://www.instagram.com/shantagfood/",
+    website: "https://shantag.com/",
+    products: [
+      {
+        id: 0,
+        title: `Methi Round Khakhra`,
+        img: brand13img1,
+        link: "https://shantag.com/products/methi-round-khakhra",
+      },
+      {
+        id: 1,
+        title: "Wheat Thins",
+        img: brand13img2,
+        link: "https://shantag.com/products/chatpata-crunch-wheat-thins",
+      },
+      {
+        id: 2,
+        title: "Garlic Bread crisps",
+        img: brand13img3,
+        link: "https://shantag.com/products/garlic-bread-wheat-crisps-khakhra",
+      },
+    ],
+  },
 ];
 
+const brandsLogo = [
+  brand0logo,
+  brand1logo,
+  brand2logo,
+  brand3logo,
+  brand4logo,
+  brand5logo,
+  brand6logo,
+  brand7logo,
+  brand8logo,
+  brand9logo,
+  brand10logo,
+  brand11logo,
+  brand12logo,
+  brand13logo,
+  silvasa,
+  zee5,
+];
+export { brandsLogo };
 export default brands;

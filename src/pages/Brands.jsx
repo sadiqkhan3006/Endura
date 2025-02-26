@@ -35,7 +35,7 @@ function Brands() {
               <div className="flex items-center lg:items-start md:flex-row gap-x-[8px] md:gap-x-[16px] lg:gap-x-[24px] md:px-[24px]">
                 <div className="md:w-[60%]">
                   <div className="flex items-start">
-                    <img className="w-[48px] md:w-full" src={item.logo} />
+                    <img className="w-[48px] md:w-full  " src={item.logo} />
                   </div>
                 </div>
                 <div className="flex flex-col gap-2">
@@ -84,9 +84,7 @@ function Brands() {
               </div>
             </div>
             <div
-              className={` ${
-                item.id === 7 ? "invisible" : "visible"
-              } flex flex-row py-[20px] md:py-[24px] lg:py-[32px] px-[2%] rounded-[16px] md:rounded-[32px] bg-[#F8F8F7] w-full gap-x-[8px] md:justify-evenly `}
+              className={`  flex flex-row py-[20px] md:py-[24px] lg:py-[32px] px-[2%] rounded-[16px] md:rounded-[32px] bg-[#F8F8F7] w-full gap-x-[8px] md:justify-evenly `}
             >
               {item.products.map((prod) => (
                 <div

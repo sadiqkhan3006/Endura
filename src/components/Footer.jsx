@@ -58,17 +58,17 @@ const Footer = () => {
           </div>
           <div className="w-full flex flex-col md:items-end">
             <div>
-              <div className="text-[#fff] font-Archivo text-[20px] leading-[23px] md:text-[22px] md:leading-[26px]   lg:text-[32px] lg:leading-[37px] font-medium">
-                Sign up for Early Access
+              <div className="text-[#fff] text-center font-Archivo text-[20px] leading-[23px] md:text-[22px] md:leading-[26px]   lg:text-[32px] lg:leading-[37px] font-medium">
+                Get the App
               </div>
               <button
                 onClick={() => {
-                  navigate("/signup");
+                  navigate("/download");
                 }}
                 className="bg-[#DA482C] px-[20px] py-[10px] w-full h-[56px] lg:w-[331px] mt-[16px] lg:mt-[24px]  rounded-[30px] 
           text-[#F1F0EE] text-[16px] flex items-center justify-center gap-x-2 font-normal  "
               >
-                <div>Sign Up Now</div>
+                <div>Download Now</div>
                 <FaArrowRightLong />
               </button>
             </div>

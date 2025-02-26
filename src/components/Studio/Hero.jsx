@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function Hero() {
   const [heroImage, setheroImage] = useState(false);
   return (
-    <div className="mt-[66px] lg:mt-[96px]">
+    <div className="mt-[0px]">
       <div className="relative w-full h-[560px] md:h-[700px] lg:h-auto ">
         {!heroImage && (
           <div className="absolute top-[50%] right-[50%] z-10 loader2"></div>
@@ -51,20 +51,29 @@ function Hero() {
               From stunning reels to high-quality product photos, we help <br />{" "}
               brands shine in the fitness & lifestyle space.
             </motion.p>
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={heroImage ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 2.3, ease: "easeOut" }}
+              className=" "
+            >
               <motion.button
-                whileHover={{ scale: 1.05 }}
+                onClick={() => {
+                  window.open(
+                    "https://www.instagram.com/endura.studios?igsh=Zm5jNXRnMWE4eGxk",
+                    "_blank"
+                  );
+                }}
+                whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                initial={{ opacity: 0, y: 50 }}
-                animate={heroImage ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 2.3, ease: "easeOut" }}
+                transition={{ duration: 0.3 }}
                 className="bg-[#DA482C] px-[20px] py-[10px]     rounded-[30px] 
           text-[#F1F0EE] text-[16px] flex items-center gap-x-2 font-medium   h-[56px] lg:mx-0"
               >
                 <div>View Our Work</div>
                 <FaArrowRightLong />
               </motion.button>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

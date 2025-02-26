@@ -4,10 +4,11 @@ import { Features } from "../components/Features";
 import { Team } from "../components/Team";
 import { Originals } from "../components/Originals";
 import { Helmet } from "react-helmet-async";
+import Hero_new from "../components/Hero_new";
 
 function Home() {
   return (
-    <div>
+    <div className=" ">
       <Helmet>
         <title>Endura Fitness - Train. Transform. Thrive</title>
         <meta
@@ -16,7 +17,9 @@ function Home() {
         />
         <link rel="canonical" href="https://www.endurafitness.in/" />
       </Helmet>
-      <Hero />
+
+      <Hero_new />
+      {/* <Hero /> */}
       <Features />
       <Originals />
       <Team />
