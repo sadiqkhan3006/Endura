@@ -49,7 +49,7 @@ function Services() {
   ];
 
   return (
-    <div className="mt-[32px] md:mt-[60px] lg:mt-[80px] mb-[32px] md:mb-[60px] lg:mb-[160px] overflow-x-hidden px-[6%]">
+    <div className="mt-[32px] md:mt-[60px] lg:mt-[80px] mb-[32px] md:mb-[60px] lg:mb-[160px] overflow-x-hidden overflow-y-hidden px-[6%]">
       {/* Heading Animation */}
       <motion.div
         variants={textFadeUp}
@@ -77,7 +77,7 @@ function Services() {
         variants={textFadeUp} // Parent with staggerChildren
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.1 }}
         className="flex flex-row gap-x-6 justify-center flex-wrap gap-y-6 mt-[35px]"
       >
         {services.map((data) => (

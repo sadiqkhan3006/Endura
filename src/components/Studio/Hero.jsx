@@ -8,7 +8,7 @@ function Hero({ onImageLoad }) {
 
   return (
     <div className="mt-[0px]">
-      <div className="relative w-full h-[560px] md:h-[700px] lg:h-auto">
+      <div className="relative w-full h-[560px] md:h-[700px] lg:h-[800px] ">
         {!heroImageLoaded && (
           <div className="absolute top-[50%] right-[50%] z-10 loader2"></div>
         )}
@@ -26,7 +26,7 @@ function Hero({ onImageLoad }) {
             onImageLoad(); // Notify parent that the image has loaded
           }}
         />
-        <div className="absolute inset-0 pl-[24px] md:pl-[7%] pr-[24px] md:pr-[7%] flex flex-col items-start justify-center bg-black bg-opacity-50">
+        <div className=" absolute inset-0 pl-[24px] md:pl-[7%] pr-[24px] md:pr-[7%] flex flex-col items-start justify-center bg-black bg-opacity-50">
           <div className="flex flex-col gap-y-[16px] md:gap-y-[24px] w-full">
             <motion.h3
               initial={{ opacity: 0, y: 20, letterSpacing: "0px" }}
